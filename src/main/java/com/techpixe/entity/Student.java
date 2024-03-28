@@ -40,9 +40,6 @@ public class Student
 	@JoinColumn(name="id")
 	private Parent parent;
 	
-//	@JsonManagedReference
-//	@OneToMany(mappedBy = "photoGrapher", fetch = FetchType.EAGER)
-//	private List<Event> event = new ArrayList<>();
 	
 	@JsonManagedReference
 	@OneToMany(mappedBy="student", fetch= FetchType.EAGER)
